@@ -1,0 +1,93 @@
+Que. Write a menu driven area calculator script.
+
+1. Calculate area of circle
+
+2. Calculate area of rectangle
+
+3. Calculate area of square
+
+4. Calculate area of triangle
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Sol:
+
+
+echo "1.Calculate Area of Circle"
+echo "2.Calculate Area of Rechtangle"
+echo "3.Calculate Area of Square"
+echo "4.Calculate Area of Triangle"
+read -p "Enter your choice :" choice
+if [ $choice -eq 1 ];then
+        read -p "Enter radius: " rad
+        area=$((( 22 / 7 ) * rad * rad))
+        echo "Area of Circle: $area"
+elif [ $choice -eq 2 ];then
+        read -p "Enter length: " len
+        read -p "Enter breadth: " brd
+        area=$((len * brd))
+        echo "Area of rechtangle: $area"
+elif [ $choice -eq 3 ];then
+        read -p "Enter length of square: " len
+        area=$((len * len))
+        echo "Area of square: $area"
+elif [ $choice -eq 4 ];then
+        read -p "Enter base length: " base
+        read -p "Enter height: " height
+        area=$(((base * height) / 2))
+        echo "Area of Triangle: $area"
+else
+        echo "invalid choice"
+fi
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Output:
+
+root@DESKTOP-081G18K:/home/ishu# bash program2
+1.Calculate Area of Circle
+2.Calculate Area of Rechtangle
+3.Calculate Area of Square
+4.Calculate Area of Triangle
+Enter your choice :1
+Enter radius: 2
+Area of Circle: 12
+
+root@DESKTOP-081G18K:/home/ishu# bash program2
+1.Calculate Area of Circle
+2.Calculate Area of Rechtangle
+3.Calculate Area of Square
+4.Calculate Area of Triangle
+Enter your choice :2
+Enter length: 5
+Enter breadth: 6
+Area of rechtangle: 30
+
+root@DESKTOP-081G18K:/home/ishu# bash program2
+1.Calculate Area of Circle
+2.Calculate Area of Rechtangle
+3.Calculate Area of Square
+4.Calculate Area of Triangle
+Enter your choice :3
+Enter length of square: 2
+Area of square: 4
+
+root@DESKTOP-081G18K:/home/ishu# bash program2
+1.Calculate Area of Circle
+2.Calculate Area of Rechtangle
+3.Calculate Area of Square
+4.Calculate Area of Triangle
+Enter your choice :4
+Enter base length: 3
+Enter height: 5
+Area of Triangle: 7
+
+root@DESKTOP-081G18K:/home/ishu# bash program2
+1.Calculate Area of Circle
+2.Calculate Area of Rechtangle
+3.Calculate Area of Square
+4.Calculate Area of Triangle
+Enter your choice :5
+invalid choice
+
+_____________________________________________________________________________________________________________________________
