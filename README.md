@@ -1,2 +1,2 @@
 # Lab
-LabAssignments
+LabAssignments of git commands
